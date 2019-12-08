@@ -21,9 +21,12 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
+    min-width: 100%;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
+    padding:1%;
+    margin-left: -2%;
+    
   
   }
   
@@ -55,3 +58,5 @@ body{
   .navbar .icon {
     display: none;
   }
+
+  

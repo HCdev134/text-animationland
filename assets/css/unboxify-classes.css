@@ -118,14 +118,15 @@ only sizes BELOW this width, the style will be applied */
     .unbox-header {
         height: 190vh;
     }
-    .inner-header {
-        flex-wrap: wrap;
-        flex-basis: 30%;
+    @media (max-width: 768px) {
+        .unbox-header {
+            height: 190vh;
+        }
+        .inner-header {
+            flex-wrap: wrap;
+            flex-basis: 30%;
+        }
+     
     }
-    .small-img {
-        max-width: 400px;
-        width: 100%;
-        max-height: 200px;
-        height: 100%;
-    }
+ 
 }
