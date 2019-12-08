@@ -1,0 +1,57 @@
+:root{
+    --color-black: #111111;
+    --gradient-one:  linear-gradient(to right, #00dbde 0%, #9e21e7 90%, #820ac7 100%);
+    --origami-graident: linear-gradient(to right, #00dbde 0%, #19428c 100%);
+}
+html,body{
+    min-height: 100%;
+}
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    height:150vh;
+    max-height: 100%;
+    background: #444 url("../images/origami-blue.svg") no-repeat center center / cover;
+    overflow-x: hidden;
+    
+}
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-image: var(--origami-graident);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #ccc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 8px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #fff;
+    color: black;
+  }
+  
+  /* Add a green background color to the active link */
+  .navbar a.active {
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the navbar on small screens */
+  .navbar .icon {
+    display: none;
+  }

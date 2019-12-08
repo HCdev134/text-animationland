@@ -1,0 +1,131 @@
+ /* :root {
+    --basic-color-one: #000;
+    --basic-color-two: #fff;
+    --theme-color-one: #1a3677;
+    --theme-sunlight-yellow: #ece80adc;
+    --theme-color-youtube: #ff0000;
+    --gradient-one: linear-gradient(to right, #00dbde 0%, #9e21e7 90%, #820ac7 100%);
+    --origami-graident: linear-gradient(25deg, #00dbde 0%, #19428c 100%);
+    --general-box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+} */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #1a3677;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}  */
+
+.unbox-header {
+    position: relative;
+    min-height:100vh;
+    max-height: 100%;
+   
+    width: 100%;
+    /* background-color: #00dbde; */
+   
+}
+
+.unbox-header::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: top right;
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+
+
+
+.headerGreeting {
+  
+  
+    text-align: center;
+    z-index: 1;
+    color: #000;
+}
+
+
+.cta-btn-one {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 3px solid #00dbde;
+    background-color: #fff;
+    
+    margin: 2rem 0 0;
+    border-radius: 20px;
+    line-height: 1.8;
+    text-decoration: none !important;
+    color: rgb(2, 1, 1);
+    box-shadow: var(--general-box-shadow);
+    transition: background-color 0.5s ease-in;
+}
+
+.cta-btn-one:hover {
+    transform: (1);
+    box-shadow: var(--general-box-shadow);
+}
+.unbox-header h1 {
+    color: white;
+    z-index: 1;
+}
+
+/* TODO insert media */
+
+/* TODO UPDATE IMPORTANT TO INSERT MEDIA QUERY HERE BASED ON HEIGHT */
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* set height to pixels if you want angle to change with screen width */
+}
+
+
+
+.smallFooter {
+    width: 100%;
+    max-width: 100vw;
+
+    padding: 1rem;
+    
+}
+
+.smallFooter~a {
+    color: #fff;
+}
+
+/* MAX is the setting to use our "mobile first" approach, meaning: 
+only sizes BELOW this width, the style will be applied */
+
+@media (max-width: 768px) {
+    .unbox-header {
+        height: 190vh;
+    }
+    .inner-header {
+        flex-wrap: wrap;
+        flex-basis: 30%;
+    }
+    .small-img {
+        max-width: 400px;
+        width: 100%;
+        max-height: 200px;
+        height: 100%;
+    }
+}

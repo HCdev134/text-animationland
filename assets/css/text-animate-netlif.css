@@ -1,0 +1,64 @@
+
+/* rem will be relational to each other here  */
+.typog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-height:90vh;
+    /* $static centering:
+     max-width:700px;
+    margin:0 auto; */
+    padding: 0 3rem;
+
+}
+h1, h2{
+    font: inherit;
+    font-weight: 300;
+    margin: 0.5rem;
+
+}
+h1{
+    font-size: 4rem;
+    color: #222;
+}
+h2{
+    font-size: 2.1rem;
+    color: #000;
+}
+
+/* cursor effect */
+.txt-typog{
+    border-right: 0.2rem solid #000 !important;
+    z-index: 999;
+    /* animation: blink-cursor 200, /* timing-function delay iteration-count: 0 1 */
+}
+/* very big screens */ 
+@media(min-width:1100px){
+ h1 {
+     font-size: 5rem;
+ }
+}
+
+/* bigger tablets */
+@media(max-width:792px){
+    .typog-container{
+        padding: 0 1rem;
+
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2,h3{
+        font-size:3rem;
+    }
+}
+@media(max-width:475px){
+    h1{
+        
+        font-size: 3rem;
+    }
+    h2{
+        font-size:2.5rem;
+    }
+}
